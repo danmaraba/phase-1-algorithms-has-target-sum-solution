@@ -1,6 +1,16 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length, i !== j; j++) {
+    if (array[i] + array[j] === target) {
+      return true;
+      }
+    }
+  }
+  return false;
 }
+
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -12,6 +22,7 @@ function hasTargetSum(array, target) {
 
 /*
   Add written explanation of your solution here
+   If a sum of any two pairs of two numbers adds to the target then returns true else return false
 */
 
 // You can run `node index.js` to view these console logs
